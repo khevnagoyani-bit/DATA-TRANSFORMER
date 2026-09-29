@@ -234,36 +234,11 @@ SELECT
 FROM Customers;
 -- SQLBook: Markup
 ### Q-11 Replace part of a string
--- SQLBook: Code
-USE data_transformer;
 
-SELECT
-    CustomerID,
-    FirstName,
-    LastName,
-    REPLACE(FirstName, 'John', 'Jonathan') AS UpdatedFirstName
-FROM Customers;
--- SQLBook: Markup
 ### Q-12 Convert FirstName to uppercase and LastName to lowercase
--- SQLBook: Code
-USE data_transformer;
 
-SELECT
-    CustomerID,
-    UPPER(FirstName) AS FirstName_Uppercase,
-    LOWER(LastName) AS LastName_Lowercase
-FROM Customers;
--- SQLBook: Markup
 ### Q-13 Trim extra spaces from the Email field
--- SQLBook: Code
-USE data_transformer;
 
-SELECT
-    CustomerID,
-    Email,
-    TRIM(Email) AS CleanEmail
-FROM Customers;
--- SQLBook: Markup
 ### Q-14 Calculate the running total of TotalAmount for each order
 -- SQLBook: Code
 USE data_transformer;
